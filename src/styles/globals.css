@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* =====================
+   Tema escuro (default)
+===================== */
+:root {
+  --bg: 10 10 10;          /* quase preto */
+  --text: 245 245 245;     /* off-white */
+  --muted: 160 160 160;
+}
+
+/* =====================
+   Tema claro (creme)
+===================== */
+.light {
+  --bg: 250 248 240;       /* branco creme */
+  --text: 30 30 30;        /* texto escuro */
+  --muted: 100 100 100;
+}
+
+html,
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--text));
+}
