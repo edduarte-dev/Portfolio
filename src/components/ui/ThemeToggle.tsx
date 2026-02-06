@@ -5,13 +5,10 @@ type Props = {
 export function ThemeToggle({ onToggle }: Props) {
   return (
     <button
-      onClick={onToggle}
-      className="
-        text-sm
-        text-[rgb(var(--muted))]
-        hover:text-[rgb(var(--text))]
-        transition-colors
-      "
+      onClick={() => {
+        console.log("toggle clicked");
+        onToggle();
+      }}
     >
       Alternar tema
     </button>

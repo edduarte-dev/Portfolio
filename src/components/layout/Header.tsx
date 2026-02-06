@@ -1,9 +1,10 @@
 import { ThemeToggle } from "../ui/ThemeToggle";
-import { useTheme } from "../../hooks/useTheme";
 
-export default function Header() {
-  const { toggleTheme } = useTheme();
+type Props = {
+  onToggleTheme: () => void;
+};
 
+export default function Header({ onToggleTheme }: Props) {
   return (
     <header className="flex justify-between items-start p-8">
       <div>
@@ -16,7 +17,7 @@ export default function Header() {
       <nav className="flex gap-6 text-sm items-center">
         <a href="#about">Sobre</a>
         <a href="#projects">Projetos</a>
-        <ThemeToggle onToggle={toggleTheme} />
+        <ThemeToggle onToggle={onToggleTheme} />
       </nav>
     </header>
   );
