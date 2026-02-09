@@ -1,11 +1,17 @@
-export default function Hero() {
+import Section from "../layout/Section";
+
+type Props = {
+  content: {
+    title: string;
+  };
+};
+
+export default function Hero({ content }: Props) {
   return (
-    <section id="hero" className="min-h-screen flex items-center px-8">
+    <Section id="hero" center>
       <h2 className="text-4xl max-w-xl leading-tight">
-        Escrevendo ideias (ou códigos)
-        <br />
-        e transformando vidas.
+        {content.title}
       </h2>
-    </section>
+    </Section>
   );
 }

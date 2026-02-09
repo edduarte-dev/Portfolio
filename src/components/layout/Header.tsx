@@ -2,9 +2,15 @@ import { ThemeToggle } from "../ui/ThemeToggle";
 
 type Props = {
   onToggleTheme: () => void;
+  onToggleLanguage: () => void;
+  language: "pt" | "en";
 };
 
-export default function Header({ onToggleTheme }: Props) {
+export default function Header({
+  onToggleTheme,
+  onToggleLanguage,
+  language,
+}: Props) {
   return (
     <header className="flex justify-between items-start p-8">
       <div>
@@ -18,6 +24,12 @@ export default function Header({ onToggleTheme }: Props) {
         <a href="#about">Sobre</a>
         <a href="#projects">Projetos</a>
         <ThemeToggle onToggle={onToggleTheme} />
+        <button
+          onClick={onToggleLanguage}
+          className="text-[rgb(var(--muted))] hover:text-[rgb(var(--text))]"
+        >
+          {language === "pt" ? "EN" : "PT"}
+        </button>
       </nav>
     </header>
   );

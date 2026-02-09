@@ -1,15 +1,17 @@
-export default function Projects() {
+import Section from "../layout/Section";
+
+type Props = {
+  content: {
+    title: string;
+    subtitle: string;
+  };
+};
+
+export default function Projects({ content }: Props) {
   return (
-    <section
-      id="projects"
-      className="min-h-screen flex items-center px-8"
-    >
-      <div>
-        <h3 className="text-3xl mb-6">Projetos</h3>
-        <p className="text-[rgb(var(--muted))]">
-          Lista de projetos virá aqui.
-        </p>
-      </div>
-    </section>
+    <Section id="projects">
+      <h3 className="text-3xl mb-2">{content.title}</h3>
+      <p className="text-[rgb(var(--muted))]">{content.subtitle}</p>
+    </Section>
   );
 }

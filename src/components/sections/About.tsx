@@ -1,15 +1,19 @@
-export default function About() {
+import Section from "../layout/Section";
+
+type Props = {
+  content: {
+    title: string;
+    text: string;
+  };
+};
+
+export default function About({ content }: Props) {
   return (
-    <section
-      id="about"
-      className="min-h-screen flex items-center px-8"
-    >
+    <Section id="about">
       <div className="max-w-xl">
-        <h3 className="text-3xl mb-4">Sobre</h3>
-        <p className="text-[rgb(var(--muted))]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nemo cum odit nesciunt esse natus voluptatum. Officia, ipsum! Explicabo labore quos cumque impedit molestias quas reprehenderit nihil odio a repudiandae!
-        </p>
+        <h3 className="text-3xl mb-4">{content.title}</h3>
+        <p className="text-[rgb(var(--muted))]">{content.text}</p>
       </div>
-    </section>
+    </Section>
   );
 }
