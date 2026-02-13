@@ -1,16 +1,16 @@
+import React from 'react';
+
 type Props = {
   onToggle: () => void;
 };
 
-export function ThemeToggle({ onToggle }: Props) {
+export const ThemeToggle = React.memo(function ThemeToggleComponent({ onToggle }: Props) {
   return (
     <button
-      onClick={() => {
-        console.log("toggle clicked");
-        onToggle();
-      }}
+      onClick={onToggle}
+      className="transition-colors"
     >
       Alternar tema
     </button>
   );
-}
+});

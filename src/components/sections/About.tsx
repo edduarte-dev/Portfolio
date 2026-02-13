@@ -1,3 +1,4 @@
+import React from "react";
 import Section from "../layout/Section";
 
 type Props = {
@@ -7,7 +8,7 @@ type Props = {
   };
 };
 
-export default function About({ content }: Props) {
+const About = React.memo(function About({ content }: Props) {
   return (
     <Section id="about">
       <div className="max-w-xl">
@@ -16,4 +17,6 @@ export default function About({ content }: Props) {
       </div>
     </Section>
   );
-}
+});
+
+export default About;
