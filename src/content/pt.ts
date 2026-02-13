@@ -1,6 +1,6 @@
 const pt = {
   hero: {
-    title: "Escrevendo ideias (e códigos) e transformando vidas.",
+    title: "Escrevendo ideias (e códigos) que transformam.",
   },
   about: {
     title: "Sobre",

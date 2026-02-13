@@ -1,6 +1,6 @@
 const en = {
   hero: {
-    title: "Writing ideas (or code) and transforming lives.",
+    title: "Write ideas (and codes) that transform.",
   },
   about: {
     title: "About",

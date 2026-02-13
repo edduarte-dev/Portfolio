@@ -9,7 +9,7 @@
 
 /* Tema claro */
 html.light {
-  --bg: 236 225 204;
+  --bg: #ffe8ef;
   --text: 30 30 30;
   --muted: 100 100 100;
 }
