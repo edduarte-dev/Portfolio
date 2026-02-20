@@ -36,7 +36,7 @@ function App() {
         onToggleLanguage={toggleLanguage}
         language={language}
       />
-      <Hero content={content.hero} />
+      <Hero content={{ title: Array.isArray(content.hero.title) ? content.hero.title : [content.hero.title] }} />
       <About content={content.about} />
       <Projects content={content.projects} />
     </>

@@ -16,6 +16,7 @@ html.light {
 
 html,
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: rgb(var(--bg));
   color: rgb(var(--text));
 }
