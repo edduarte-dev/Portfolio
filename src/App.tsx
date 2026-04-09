@@ -11,7 +11,7 @@ function App() {
   const { content, toggleLanguage, language } = useLanguage();
 
   return (
-    <>
+    <div className="flex flex-col">
       <div className="fixed inset-0 z-50 pointer-events-none">
         <LiquidEther
           colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
@@ -39,7 +39,7 @@ function App() {
       <Hero content={{ title: Array.isArray(content.hero.title) ? content.hero.title : [content.hero.title] }} />
       <About content={content.about} />
       <Projects content={content.projects} />
-    </>
+    </div>
   );
 }
 

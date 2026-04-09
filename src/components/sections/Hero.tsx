@@ -15,7 +15,7 @@ export default function Hero({ content }: Props) {
 
   return (
     <Section id="hero">
-      <div className="min-h-screen flex flex-col">
+      <div className="h-screen flex flex-col">
         
         {/* Texto */}
         <div className="flex-1 flex items-center justify-start">

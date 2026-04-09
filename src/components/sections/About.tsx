@@ -10,7 +10,7 @@ type Props = {
 
 export default function About({ content }: Props) {
   return (
-    <Section id="about" className="relative min-h-screen">
+    <Section id="about" className="min-h-screen">
       
       <div className="max-w-xl">
         <h3 className="text-3xl mb-4">{content.title}</h3>

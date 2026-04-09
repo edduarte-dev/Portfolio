@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
-/* Tema escuro (default) */
 :root {
   --bg: 10 10 10;
   --text: 245 245 245;
   --muted: 160 160 160;
 }
 
-/* Tema claro */
 html.light {
   --bg: 236 225 204;
   --text: 30 30 30;
@@ -16,7 +14,10 @@ html.light {
 
 html,
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: rgb(var(--bg));
   color: rgb(var(--text));
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
