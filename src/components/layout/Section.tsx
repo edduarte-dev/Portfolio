@@ -17,6 +17,7 @@ export default function Section({
     <section
       id={id}
       className={`
+        relative
         min-h-screen
         w-full
         px-8
